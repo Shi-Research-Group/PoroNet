@@ -1,3 +1,2 @@
 # PoroNet
-PoroNet is an inherently interpretable pore graph neural network (GNN) used to predict gas adsorption capacity of metal-organic frameworks (MOF) and extract the contribution of each individual pore to the total adsorption.
-PoroNet was constrcuted on top of pore graphs, which were made using our in-house pore network analysis software "Mofography". Mofography has not been published yet, but the functions related to PoroNet are included in this repository.
+PoroNet is an inherently interpretable pore graph neural network (GNN) used to predict gas adsorption capacity of metal-organic frameworks (MOF) and extract the contribution of each individual pore to the total adsorption. It was constrcuted on top of pore graphs, which were made using our in-house pore network analysis software "Mofography". Mofography has not been published yet, but the functions related to PoroNet are included in this repository.
