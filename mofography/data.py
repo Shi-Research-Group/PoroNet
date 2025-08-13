@@ -254,3 +254,60 @@ def read_raspa_pdb(path_to_file, symbol_map=None):
             print(f"  - {skipped}")
 
     return output
+
+def get_data_from_mofdb(
+    url="https://mof.tech.northwestern.edu/mofs/#.json",
+    params={"vf_min": 0.1, "vf_max": 1.0, "database": "IZA", "page": 1},
+    headers={"loading": "cm3(STP)/cm3", "pressure": "bar"},
+    npages=None,
+    limit=1000,
+):
+    """
+    This is a wrapper for the MOFDB API, which is explained here:https://mof.tech.northwestern.edu/api
+    It takes in a url, parameters, headers, number of pages and a path to the mofography repository and
+    returns a pandas dataframe of the data.
+
+    The function is asynchronous and uses the aiohttp library to make multiple requests to the MOFDB
+    API.
+
+
+
+    :param url: The url of the MOF database, defaults to https://mof.tech.northwestern.edu/mofs/#.json
+    (optional)
+    :param params: a dictionary of parameters to be passed to the url. The default parameters are: {'vf_min': 0.1, 'vf_max': 1.0, 'database':'IZA','page':1}
+    :param headers: This is the headers that you want to pass to the MOFDB API. The default is to get
+    the loading and pressure data
+    :param npages: number of pages to be scraped. If None, then the number of pages is determined by the
+    function to return all the pages
+    :param limit: maximum number of pages allowed in the query (no need to change this one unless overflow )
+    :return: A dataframe with the results of the query.
+    """
+
+    from aiohttp import ClientSession
+    import asyncio
+    import numpy as np
+    import nest_asyncio
+
+    nest_asyncio.apply()
+    import pandas as pd
+
+    # just put page:1 in the params it doesn't matter, only the npages parameter is used
+    params["page"] = 1
+
+    if npages == None:
+        npages = get_number_of_pages(url, headers, params)
+
+    # This shouldn't be called in a function (similar to initiating a Dask cluster)
+    loop = asyncio.get_event_loop()
+    # with ClientSession(headers= headers) as session:
+    session = ClientSession(headers=headers)
+    fut = asyncio.ensure_future(
+        get_mofdb_data(
+            session, url=url, params=params, headers=headers, npages=npages, limit=limit
+        )
+    )
+    loop.run_until_complete(fut)
+    session.close()
+    data_df = pd.DataFrame(list(np.hstack(([f["results"] for f in fut.result()]))))
+
+    return data_df
