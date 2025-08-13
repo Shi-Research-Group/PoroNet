@@ -311,3 +311,23 @@ def get_data_from_mofdb(
     data_df = pd.DataFrame(list(np.hstack(([f["results"] for f in fut.result()]))))
 
     return data_df
+
+def get_number_of_pages(url, headers, params):
+    """
+    Get the number of pages of the result, from the url, for a given set of headers and parameters
+
+    :param url: url for MOFDb for example
+    :type url: string
+    :param headers: dictionary of headers
+    :type headers: dict
+    :param params: dictionary of parameters
+    :type params: dict
+    :return: number of pages in the result
+    :rtype: int
+    """
+
+    import requests
+
+    resp = requests.get(url=url, headers=headers, params=params)
+    resp = resp.json()
+    return resp["pages"]
