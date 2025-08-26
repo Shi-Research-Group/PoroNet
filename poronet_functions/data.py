@@ -312,8 +312,7 @@ def get_data_from_mofdb(
 ):
     """
     This is a wrapper for the MOFDB API, which is explained here:https://mof.tech.northwestern.edu/api
-    It takes in a url, parameters, headers, number of pages and a path to the mofography repository and
-    returns a pandas dataframe of the data.
+    It takes in a url, parameters, headers, number of pages and a path to and returns a pandas dataframe of the data.
 
     The function is asynchronous and uses the aiohttp library to make multiple requests to the MOFDB
     API.
