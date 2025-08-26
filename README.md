@@ -5,8 +5,10 @@ PoroNet is an inherently interpretable pore graph neural network for predicting 
 
 ## Instructions
 This repository consists of:
-1. "mofography": Selected functions from Mofography that are involved in PoroNet.
-2. "Download_Tobacco_Database": Download MOF structures from the Tobacco databese through MOFXDB (mof.tech.northwestern.edu) database.
+1. "poronet_functions": Functions used in PoroNet.
+2. "Download_Tobacco_Database": Download MOF structures from the Tobacco database through MOFXDB (mof.tech.northwestern.edu) database.
 3. "Pore_Graph_Generation": Generate pore graphs for chosen MOFs.
 4. "Pore_Labels_Extraction": Extract pore-level labels from GCMC simulation trajectories using Mofography.
 5. "PoreNet&PoroNet-Base": Illustrations of PoroNet and PoroNet-Base for predicting H2 adsorption at 160 K/5 bar.
+6. "Cavity_Size_Distribution_Calculation": Calculation of the cavity size distribution .
+7. "Pore_Surface_Area_Calculation":Calcultion of the surface area of pores.
