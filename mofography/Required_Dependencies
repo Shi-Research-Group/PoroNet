@@ -1,0 +1,2 @@
+The following are the dependencies that may be required for MOFography：
+conda-forge pymatgen ase dask dask-jobqueue networkx scikit-image tqdm aiohttp icecream sparse scikit-learn rich trimesh pyvista plotly furl requests freud nbformat cupy python-kaleido
