@@ -1,0 +1,32 @@
+SimulationType                MonteCarlo
+NumberOfCycles                3000
+NumberOfInitializationCycles  3000
+PrintEvery                    1000
+
+Movies                        yes
+WriteMoviesEvery              3
+
+WriteBinaryRestartFileEvery	500
+RandomSeed                    10086
+
+ContinueAfterCrash            no
+
+Forcefield                    local
+RemoveAtomNumberCodeFromLabel yes
+CutOffVDW 12.8
+
+Framework 0
+FrameworkName tobmof-2
+UnitCells 3 3 2
+
+ExternalTemperature 77.0
+ExternalPressure  10000000
+
+Component 0 MoleculeName             H2
+            MoleculeDefinition       local
+            TranslationProbability   0.5
+            RotationProbability      0.5
+            ReinsertionProbability   0.5
+            SwapProbability          1.0
+            CreateNumberOfMolecules  0
+
