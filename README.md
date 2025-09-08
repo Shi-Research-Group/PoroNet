@@ -1,7 +1,7 @@
 # PoroNet
 PoroNet is an inherently interpretable pore graph neural network for predicting gas adsorption capacity in metal-organic frameworks (MOFs). Its interpretability allows the extraction of contributions of individual pores to the total adsorption. PoroNet is constructed on top of pore graphs, which can be generated using code in this repo. The pore graph generation and pore-level energy histogram features will be later incorporated into an open-source Python package, Mofography (unpublished). Stay tuned! <br>
 
-![PoroNet](PoroNet-Worflow.jpg)
+![PoroNet](workflow.jpg)
 
 ## Instructions
 This repository consists of:
