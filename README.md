@@ -9,7 +9,7 @@ This repository consists of:
 2. "Download_Tobacco_Database": Download MOF structures from the Tobacco database through MOFXDB (mof.tech.northwestern.edu) database.
 3. "Pore_Graph_Generation": Generate pore graphs for chosen MOFs.
 4. "Pore_Labels_Extraction": Extract pore-level labels from RASPA2 Movie files.
-5. "PoreNet&PoroNet-Base": Illustrations of PoroNet and PoroNet-Base for predicting H2 adsorption at 160 K/5 bar.
+5. "PoroNet&PoroNet-Base": Illustrations of PoroNet and PoroNet-Base for predicting H2 adsorption at 160 K/5 bar.
 6. "Cavity_Size_Distribution_Calculation": Calculation of the cavity size distribution .
 7. "Pore_Surface_Area_Calculation":Calcultion of the surface area of pores.
 8. "Example_GCMC_input": Example RASPA2 simulation input files for H2 adsorption in MOFs.
