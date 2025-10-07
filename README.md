@@ -13,4 +13,7 @@ This repository consists of:
 6. "Cavity_Size_Distribution_Calculation": Calculation of the cavity size distribution .
 7. "Pore_Surface_Area_Calculation":Calcultion of the surface area of pores.
 8. "Example_GCMC_input": Example RASPA2 simulation input files for H2 adsorption in MOFs.
-9. "GCMC_output": Results of GCMC simulation for H2 adsorption in selected MOFs and pores at cryogenic conditions (160 K/5 bar, 77 K/100 bar) and room temperature conditions (298 K/5 bar, 298 K/100 bar). 
+9. "GCMC_output": Results of GCMC simulation for H2 adsorption in selected MOFs and pores at cryogenic conditions (160 K/5 bar, 77 K/100 bar) and room temperature conditions (298 K/5 bar, 298 K/100 bar).
+
+## References
+If you find PoroNet helpful to your research or if you want to read more details, please cite/check:  Zheng C, Gopalan A, Shi K. PoroNet: An Inherently Interpretable Pore Graph Neural Network for Prediction of Gas Adsorption in Metal-Organic Frameworks. ChemRxiv. 2025; doi:10.26434/chemrxiv-2025-gc17t
