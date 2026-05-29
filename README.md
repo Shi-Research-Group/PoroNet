@@ -17,5 +17,4 @@ This repository consists of:
 10. “MOF-5.html”: an illustrative website showing the pore network structure of MOF-5.
 
 ## Reference
-Zheng C, Gopalan A, Shi K. PoroNet: An Inherently Interpretable Pore Graph Neural Network for Prediction of Gas Adsorption in Metal-Organic Frameworks. ChemRxiv. 2025; doi:10.26434/chemrxiv-2025-gc17t. 
-https://chemrxiv.org/engage/chemrxiv/article-details/68b1d29ea94eede1546d3853
+Zheng, C.; Gopalan, A.; Shi, K. PoroNet: An Intrinsically Interpretable Pore Graph Neural Network for Resolving Pore-Level Adsorption in Metal–Organic Frameworks. J. Chem. Theory Comput. 2026. https://pubs.acs.org/doi/10.1021/acs.jctc.6c00100
