@@ -15,6 +15,7 @@ This repository consists of:
 8. "Example_GCMC_input": Example RASPA2 simulation input files for H2 adsorption in MOFs.
 9. "GCMC_output": Results of GCMC simulation for H2 adsorption in selected MOFs and pores at cryogenic conditions (160 K/5 bar, 77 K/100 bar) and room temperature conditions (298 K/5 bar, 298 K/100 bar).
 10. “MOF-5.html”: an illustrative website showing the pore network structure of MOF-5.
+11. "PoroNet.md": an example of PoroNet for H2 adsorption prediction and pore-level contribution extraction.
 
 ## Reference
 Zheng, C.; Gopalan, A.; Shi, K. PoroNet: An Intrinsically Interpretable Pore Graph Neural Network for Resolving Pore-Level Adsorption in Metal–Organic Frameworks. J. Chem. Theory Comput. 2026, 22 (11), 5716–5730. https://doi.org/10.1021/acs.jctc.6c00100.
